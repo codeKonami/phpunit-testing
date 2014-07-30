@@ -13,7 +13,7 @@ class ProgressHelperTest extends CakeTestCase {
 
   public function testBar() {
     $result = $this->Progress->bar(90);
-    $this->assertContains('width: 80%', $result);
+    $this->assertContains('width: 90%', $result);
     $this->assertContains('progress-bar', $result);
 
     $result = $this->Progress->bar(33.3333333);
